@@ -1,0 +1,171 @@
+/* Советский ретро-стиль */
+:root {
+  --blue: #a92720;
+  --blue-dark: #7d1d19;
+  --green: #35563c;
+  --green-dark: #29432f;
+  --bg: #f1e8d2;
+  --white: #faf4e5;
+  --text: #30291f;
+  --muted: #625847;
+  --border: #c9b994;
+  --shadow: 4px 4px 0 rgba(68, 49, 30, 0.13);
+}
+
+body {
+  background-color: var(--bg);
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 5px,
+    rgba(110, 82, 45, 0.025) 6px
+  );
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.topbar,
+.hero-card,
+.service-card,
+.step,
+.advantage,
+.form-wrap,
+.contact-box {
+  background: var(--white);
+  border: 2px solid var(--text);
+  border-radius: 2px;
+  box-shadow: var(--shadow);
+}
+
+.topbar {
+  border-width: 0 0 3px;
+  border-color: var(--blue);
+}
+
+.brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.brand-mark {
+  border-radius: 0;
+  background: var(--blue);
+  color: #fff4d8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+.phone-link,
+.contact-box a,
+.contact-mini a {
+  color: var(--blue-dark);
+}
+
+h1,
+h2 {
+  color: var(--blue-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+h1 {
+  line-height: 1.05;
+}
+
+.eyebrow {
+  color: var(--green-dark);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.button {
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 rgba(48, 41, 31, 0.22);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.button:hover {
+  transform: none;
+  filter: brightness(0.94);
+}
+
+.button-primary {
+  background: var(--blue);
+  color: #fff4d8;
+}
+
+.button-secondary {
+  background: var(--green);
+  border: 2px solid var(--green-dark);
+  color: #fff4d8;
+}
+
+.hero-points li {
+  background: #e4dcc6;
+  border: 1px solid var(--green-dark);
+  border-radius: 2px;
+}
+
+.card-icon {
+  border-radius: 2px;
+  background: #e4dcc6;
+}
+
+.service-card,
+.step,
+.advantage,
+.contact-box {
+  border-top: 5px solid var(--blue);
+}
+
+.service-card:nth-child(even),
+.step:nth-child(even),
+.contact-box:nth-child(even) {
+  border-top-color: var(--green);
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea {
+  border: 2px solid var(--border);
+  border-radius: 2px;
+  background: #fffaf0;
+  color: var(--text);
+}
+
+.request-form input:focus,
+.request-form select:focus,
+.request-form textarea:focus {
+  outline: 2px solid var(--green);
+  border-color: var(--green);
+}
+
+.step-number {
+  border-radius: 2px;
+  background: var(--blue);
+  color: #fff4d8;
+}
+
+.footer {
+  background: #263d2c;
+  border-top: 5px solid var(--blue);
+  color: #fff4d8;
+}
+
+.footer p {
+  color: #e9dec6;
+}
+
+.footer a {
+  color: #fff4d8;
+}
+
+@media (max-width: 600px) {
+  .button {
+    min-height: 52px;
+  }
+}
